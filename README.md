@@ -95,11 +95,43 @@ before deciding whether to point one at a tenant.
   this? Ranks files by criticality and shows which impacted files have no test.
 - **[certadel](https://github.com/earbona23/certadel)** — passive, authorized external
   posture assessment: TLS, headers, cookies, DNS, email auth. Inspects, never exploits.
+- **[entraform](https://github.com/earbona23/entraform)** — identity-aware linter for
+  Terraform: over-privileged Entra app permissions, dangerous Azure role assignments and
+  fail-open Conditional Access, caught in CI before `apply`, not after.
 
 ### Writing
 
 - **[security-writeups](https://github.com/earbona23/security-writeups)** — methodology and
   code on Microsoft security engineering. No organization-specific detail, ever.
+
+### Upstream
+
+I send fixes to the tools I depend on, not only to my own. Open pull requests, each a real
+defect with a test:
+[BloodHound](https://github.com/SpecterOps/BloodHound/pull/3254) (an Azure attack-path edge
+that targeted managed identities it cannot actually abuse),
+[Prowler](https://github.com/prowler-cloud/prowler/pull/12732) (a CISA ScuBA Entra ID
+baseline),
+[Maester](https://github.com/maester365/maester/pull/2165),
+[Elastic detection-rules](https://github.com/elastic/detection-rules/pull/6729),
+[Sigma](https://github.com/SigmaHQ/sigma/pull/6277),
+[entra-powershell](https://github.com/microsoftgraph/entra-powershell/pull/1611) and
+[msgraph-sdk-python](https://github.com/microsoftgraph/msgraph-sdk-python/pull/1572).
+
+---
+
+### Support this work
+
+Every tool here is MIT and stays free. Four of them (revtriage, entra-tripwire,
+containment-cut, vantage) are open-core: a Pro tier adds live-tenant import and gated
+execution, and funds the maintained rule catalogues the free engine reads from.
+
+- **Sponsor** → [github.com/sponsors/earbona23](https://github.com/sponsors/earbona23). From
+  $5 a month. At $50 you get a Pro license for one tool; at $250, Pro across every tool for
+  your whole org.
+- **Work with me** → I run read-only Microsoft 365 and Entra ID posture assessments for MSPs
+  and their clients, on the same tooling you see here.
+  [consulting.arrankago.com](https://consulting.arrankago.com)
 
 ---
 
