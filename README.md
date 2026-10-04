@@ -106,17 +106,46 @@ before deciding whether to point one at a tenant.
 
 ### Upstream
 
-I send fixes to the tools I depend on, not only to my own. Open pull requests, each a real
-defect with a test:
-[BloodHound](https://github.com/SpecterOps/BloodHound/pull/3254) (an Azure attack-path edge
-that targeted managed identities it cannot actually abuse),
-[Prowler](https://github.com/prowler-cloud/prowler/pull/12732) (a CISA ScuBA Entra ID
-baseline),
-[Maester](https://github.com/maester365/maester/pull/2165),
-[Elastic detection-rules](https://github.com/elastic/detection-rules/pull/6729),
-[Sigma](https://github.com/SigmaHQ/sigma/pull/6277),
-[entra-powershell](https://github.com/microsoftgraph/entra-powershell/pull/1611) and
-[msgraph-sdk-python](https://github.com/microsoftgraph/msgraph-sdk-python/pull/1572).
+I send fixes to the tools I depend on, not only to my own. Each one is a real defect with a
+test, not a typo.
+
+**Merged**
+
+- **[Azure/Azure-Sentinel#15047](https://github.com/Azure/Azure-Sentinel/pull/15047)** — analytic
+  rule: end-user consent to an app requesting mailbox access plus `offline_access`. The illicit-consent
+  pattern, as a detection.
+- **[Maester](https://github.com/maester365/maester/pulls?q=is%3Apr+author%3Aearbona23+is%3Amerged)** —
+  four fixes merged
+  ([#2165](https://github.com/maester365/maester/pull/2165),
+  [#2173](https://github.com/maester365/maester/pull/2173),
+  [#2174](https://github.com/maester365/maester/pull/2174),
+  [#2175](https://github.com/maester365/maester/pull/2175)). All four are the same class of
+  bug and the reason this profile has a rule about it: a check that returned *pass* when it had
+  actually been denied, or when a break-glass exclusion could not be verified at all. Surfacing
+  those as `Skipped` instead of green is the entire fix.
+- **[codeburn#1229](https://github.com/getagentseal/codeburn/pull/1229)** — parser marked
+  partially scanned caches as complete.
+
+**In review**
+
+- [BloodHound#3254](https://github.com/SpecterOps/BloodHound/pull/3254) — an Azure attack-path
+  edge that targeted managed identities it cannot actually abuse.
+- [Prowler#12732](https://github.com/prowler-cloud/prowler/pull/12732) (CISA ScuBA Entra ID
+  baseline) and [#12748](https://github.com/prowler-cloud/prowler/pull/12748) (federated
+  credentials on privileged apps).
+- [EntraExporter#122](https://github.com/microsoft/EntraExporter/pull/122) and
+  [#123](https://github.com/microsoft/EntraExporter/pull/123) — sovereign-cloud exports were
+  hitting the commercial Graph endpoint.
+- [entra-powershell#1611](https://github.com/microsoftgraph/entra-powershell/pull/1611) —
+  Windows PowerShell 5.1 import failure from a non-ASCII path.
+- [msgraph-sdk-python#1572](https://github.com/microsoftgraph/msgraph-sdk-python/pull/1572) —
+  corrected sample.
+- The consent and federated-credential detections above, also filed as
+  [Sigma#6277](https://github.com/SigmaHQ/sigma/pull/6277) /
+  [#6278](https://github.com/SigmaHQ/sigma/pull/6278) and
+  [Elastic#6729](https://github.com/elastic/detection-rules/pull/6729) /
+  [#6741](https://github.com/elastic/detection-rules/pull/6741), so the same behaviour is
+  covered in three vendors' rule sets rather than only in Microsoft's.
 
 ---
 
