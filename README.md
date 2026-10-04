@@ -39,6 +39,20 @@ A tool that oversells its coverage is worse than no tool, because you stop looki
 
 ---
 
+### What I keep current, and what I do not
+
+Four of these are maintained — [revtriage](https://github.com/earbona23/revtriage),
+[entra-tripwire](https://github.com/earbona23/entra-tripwire),
+[entraform](https://github.com/earbona23/entraform) and
+[vantage](https://github.com/earbona23/vantage): bug fixes, rule catalogues kept current,
+issues answered. The rest are **snapshots**. They work and their tests pass, but I am not
+adding features to them, and each one says so at the top of its own README rather than
+leaving you to infer it from the commit date. Publishing fifteen tools and quietly
+maintaining four is a choice; pretending to maintain fifteen would be the dishonest
+version of the same thing.
+
+---
+
 ### The Active Defense Trilogy
 
 Three tools, one idea: an intruder who is already inside leaves traces that a vulnerability
@@ -151,13 +165,21 @@ test, not a typo.
 
 ### Support this work
 
-Every tool here is MIT and stays free. Four of them (revtriage, entra-tripwire,
-containment-cut, vantage) are open-core: a Pro tier adds live-tenant import and gated
-execution, and funds the maintained rule catalogues the free engine reads from.
+Every tool here is MIT and stays free, and nothing that decides a verdict is ever behind
+a licence. Three of them — [revtriage](https://github.com/earbona23/revtriage),
+[entra-tripwire](https://github.com/earbona23/entra-tripwire) and
+[vantage](https://github.com/earbona23/vantage) — are open-core: a Pro licence adds the
+parts that *act* or *scale* (live-tenant import, gated execution, batch and SIEM
+delivery), and funds the rule catalogues the free engine reads from. US$29/month per
+organisation, unlimited seats, or US$69 for revtriage and entra-tripwire together.
 
-- **Sponsor** → [github.com/sponsors/earbona23](https://github.com/sponsors/earbona23). From
-  $5 a month. At $50 you get a Pro license for one tool; at $250, Pro across every tool for
-  your whole org.
+`containment-cut` is sometimes listed as a fourth. It is not: its Pro features are not
+implemented yet, so it is not on sale and no licence is issued for it. It says so at the
+top of [its Pro page](https://github.com/earbona23/containment-cut/blob/main/docs/pro.md).
+I would rather lose the sale than take money for a flag that switches on nothing.
+
+- **Sponsor** → [github.com/sponsors/earbona23](https://github.com/sponsors/earbona23).
+  From $5 a month, and it buys exactly what it says on the tier — no more.
 - **Work with me** → I run read-only Microsoft 365 and Entra ID posture assessments for MSPs
   and their clients, on the same tooling you see here.
   [consulting.arrankago.com](https://consulting.arrankago.com)
