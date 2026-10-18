@@ -186,5 +186,5 @@ I would rather lose the sale than take money for a flag that switches on nothing
 
 ---
 
-<sub>Microsoft SC-500 and SC-100 in preparation · Defender XDR · Sentinel · KQL · Entra ID ·
+<sub>Defender XDR · Sentinel · KQL · Entra ID ·
 Conditional Access · Intune · Purview · Microsoft Graph · PowerShell · Python</sub>
