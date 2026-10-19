@@ -182,7 +182,7 @@ I would rather lose the sale than take money for a flag that switches on nothing
   From $5 a month, and it buys exactly what it says on the tier — no more.
 - **Work with me** → I run read-only Microsoft 365 and Entra ID posture assessments for MSPs
   and their clients, on the same tooling you see here.
-  [consulting.arrankago.com](https://consulting.arrankago.com)
+  [consulting.arrankago.com](https://consulting.arrankago.com) · [earbona@arrankago.com](mailto:earbona@arrankago.com)
 
 ---
 
