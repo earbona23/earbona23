@@ -1,6 +1,6 @@
 ## Eduard Arbona
 
-Security engineering — detection and response, identity, automation. Santo Domingo,
+Security engineering detection and response, identity, automation. Santo Domingo,
 Dominican Republic.
 
 By day I run Defender XDR and Sentinel for a tenant covering several group entities and a
@@ -11,7 +11,6 @@ and could not find.
 
 I also build and operate a services marketplace in production, solo, end to end.
 
----
 
 ### The rule everything here follows
 
@@ -37,7 +36,6 @@ that its headline guarantee had been passing on two empty sets.
 Every README states what the tool cannot do, in its own section. That part is not modesty.
 A tool that oversells its coverage is worse than no tool, because you stop looking.
 
----
 
 ### What I keep current, and what I do not
 
